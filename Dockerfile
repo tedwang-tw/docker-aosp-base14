@@ -15,7 +15,4 @@ RUN apt-get install -y make
 # AOSP requirement depends on android versions
 #
 # toolchains 
-RUN apt-get install -y bison g++-multilib gperf libxml2-utils
-
-# Clean up
-RUN apt-get clean
+RUN apt-get install -y bison g++-multilib gperf libxml2-utils && apt-get clean
